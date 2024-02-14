@@ -93,7 +93,7 @@ button:hover {
     background-color: #4545c2;
 }
 
-.mensagem,
+.mensagem-media,
 #resultado {
     font-size: 2rem;
     text-align: center;
@@ -114,11 +114,11 @@ button:hover {
     color: #fff;
     background: rgb(138, 25, 34);
 }
-.mensagem, .mensagem2{
+.mensagem-media, .mensagem-cadastro{
     color: #f00;
     font-size: 2rem;
 }
-#formulario-02 .mensagem2{
+#formulario-02 .mensagem-cadastro{
     font-size: 1.5rem;
     margin: 0 auto;
 }

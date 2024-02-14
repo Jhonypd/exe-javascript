@@ -1,52 +1,64 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Javascript</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <div>
-            <input type="button" value="Mudar" class="mudar-btn" onclick="mudar()">
-        </div>
-        <div class="form cm">
+      <div>
+        <input type="button" value="Mudar" class="mudar-btn" onclick="toChange()" />
+      </div>
+      <div class="form cm">
+        <h2>Cálculo de média</h2>
 
-            <h2>Cálculo de média</h2>
-            
-            <span class="mensagem"></span>
-            <form id="formulario-01">
-                <input type="text" placeholder="Nota 01" class="numero" name="n1">
-                <input type="text" placeholder="Nota 02" class="numero" name="n2">
-                <input type="text" placeholder="Nota 03" class="numero" name="n3">
-                <input type="text" placeholder="Nota 04" class="numero" name="n4">
-                <button type="submit">Enviar</button>
-            </form>
-            
-            
-        </div>
+        <span class="mensagem-media"></span>
+        <form id="formulario-01">
+          <input type="text" placeholder="Nota 01" class="numero" name="n1" />
+          <input type="text" placeholder="Nota 02" class="numero" name="n2" />
+          <input type="text" placeholder="Nota 03" class="numero" name="n3" />
+          <input type="text" placeholder="Nota 04" class="numero" name="n4" />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
 
-        <div class="form cd mudar">
-            <h2>Faça seu cadastro</h2>
-            <span class="mensagem2"></span>
-            <form id="formulario-02">
-                <input type="text" placeholder="digite seu nome" class="obrigatorio" name="nome" id="nome">
-                <input type="text" placeholder="digite seu email" class="obrigatorio" name="email" id="email">
-                <input type="text" placeholder="digite seu telefone" class="obrigatorio" name="telefone" id="telefone">
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+      <div id="resultado" class="form">
+        <p>Aguardando para cacular.</p>
+      </div>
 
-        <div id="resultado" class="">
-            <p>Aguardando para cacular.</p>
-        </div>
+      <div class="form cd mudar">
+        <h2>Faça seu cadastro</h2>
 
+        <span class="mensagem-cadastro"></span>
+        <form id="formulario-02">
+          <input
+            type="text"
+            placeholder="digite seu nome"
+            class="obrigatorio"
+            name="nome"
+            id="nome" />
+          <input
+            type="text"
+            placeholder="digite seu email"
+            class="obrigatorio"
+            name="email"
+            id="email" />
+          <input
+            type="text"
+            placeholder="digite seu telefone"
+            class="obrigatorio"
+            name="telefone"
+            id="telefone" />
+          <button id="btnFormTwo" type="submit">Enviar</button>
+        </form>
+      </div>
     </div>
 
     <script type="text/javascript" src="./js/script.js"></script>
-    
-</body>
+  </body>
 </html>
